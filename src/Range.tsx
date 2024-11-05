@@ -163,7 +163,9 @@ class Range extends React.Component<IProps> {
           thumbOffsets.y =
             ((thumbRect.height - trackRect.height) / 2 + trackPadding.top) * -1;
           thumbOffsets.x +=
-            trackRect.width * relativeValue(values[index], min, max) -
+            (min === max
+              ? index
+              : trackRect.width * relativeValue(values[index], min, max)) -
             thumbRect.width / 2;
           return thumbOffsets;
         case Direction.Left:

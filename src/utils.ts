@@ -60,7 +60,6 @@ export function normalizeValue(
 }
 
 export function relativeValue(value: number, min: number, max: number) {
-  if (min === max) return 1;
   return (value - min) / (max - min);
 }
 
