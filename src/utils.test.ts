@@ -90,7 +90,7 @@ test("checkBoundaries", () => {
     new RangeError("value (110) is bigger than max (100)"),
   );
   expect(() => checkBoundaries(0, 200, 100)).toThrow(
-    new RangeError("min (200) is equal/bigger than max (100)"),
+    new RangeError("min (200) is bigger than max (100)"),
   );
   expect(() => checkBoundaries(50, 0, 100)).not.toThrow();
   expect(() => checkBoundaries(-50, -100, 0)).not.toThrow();
