@@ -1,5 +1,5 @@
 {
-  "name": "@VK-Chart/react-range",
+  "name": "@vk-chart/react-range",
   "version": "1.10.0",
   "description": "Range input. Slides in all directions.",
   "main": "lib/index.js",
